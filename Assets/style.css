@@ -8,14 +8,54 @@
 .container{
     width: 100%;
     height: 100vh;
-    background-color: blue;
+    background-color: gray;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.calculator_{
-     background-color: rgb(2, 2, 2);
+.calculator{
+     background: rgb(255, 255, 255);
      padding: 20px;
      border-radius: 10px;
 }
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: large;
+}
+
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input{
+text-align: right;
+flex: 1;
+font-size: 45px;
+box-shadow: none;
+color: white;
+background-color: rgb(49, 46, 46);
+padding: 10px;
+}
+
+form input.equal {
+    width: 145px;
+}
+
+
+.calculator form input:active {
+    transform: scale(0.95);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+}
+
